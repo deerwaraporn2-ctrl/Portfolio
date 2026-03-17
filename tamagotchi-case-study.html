@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamagotchi Game | Case Study</title>
+    <p class="case-meta">
+        Role: Frontend Developer | Year: 2026
+    </p>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+</head>
+
+<body>
+    <main class="case-study">
+
+        <section class="section section--soft case-hero">
+            <div class="container case-hero-grid">
+
+                <div class="case-hero-text">
+                    <h1 class="case-title">Tamagotchi Game</h1>
+                    <p class="case-subtitle">
+                        Frontend Developer Project (2026)
+                    </p>
+                    <p class="case-intro">
+                        A browser-based virtual pet simulation built with vanilla JavaScript.
+                        Users can create multiple pets with independent stat systems that
+                        update in real time.
+                    </p>
+                    <div class="case-actions">
+                        <a href="https://github.com/deerwaraporn2-ctrl/Tamagotchi-Game-New-Version.git" target="_blank" class="project-btn">
+                            Live Demo →
+                        </a>
+
+                        <a href="https://github.com/deerwaraporn2-ctrl/Tamagotchi-Game-New-Version.git" target="_blank"
+                            class="project-btn project-btn--secondary">
+                            View on GitHub →
+                        </a>
+                    </div>
+                </div>
+
+                <div class="case-hero-image">
+                    <img src="images/tamagotchi-preview.jpg" alt="Tamagotchi Game preview" width="200">
+                </div>
+
+            </div>
+        </section>
+
+
+        <section class="case-grid">
+
+            <div class="case-card">
+                <h2 class="section-title">The Concept</h2>
+                <p>
+                    The goal was to build a small interactive browser game that simulates
+                    a virtual pet lifecycle. Each pet maintains its own hunger, energy,
+                    and happiness states that evolve independently over time.
+                </p>
+            </div>
+
+            <div class="case-card">
+                <h2 class="section-title">The Technical Approach</h2>
+                <p>
+                    The application was built using semantic HTML, modular CSS, and
+                    vanilla JavaScript. Dynamic DOM rendering is used to generate pet
+                    cards, while timer functions control stat updates.
+                </p>
+            </div>
+
+            <div class="case-card">
+                <h2 class="section-title">Key Features</h2>
+                <ul class="case-list">
+                    <li>Create up to four independent pets</li>
+                    <li>Real-time stat decrease using timer logic</li>
+                    <li>Dynamic card rendering per pet</li>
+                    <li>Fetch API integration for animal images</li>
+                    <li>Hybrid API + local fallback image handling</li>
+                    <li>Restart game functionality</li>
+                </ul>
+            </div>
+
+            <div class="case-card">
+                <h2 class="section-title">Technical Challenges</h2>
+                <p>
+                    A key challenge was handling public API limitations and CORS restrictions.
+                    Some endpoints blocked direct browser requests. A hybrid solution was
+                    implemented, combining public APIs with local fallback images to ensure
+                    stable rendering.
+                </p>
+            </div>
+
+        </section>
+
+
+        <section class="reflection">
+            <div class="relfection-inner">
+                <h2 class="section-title">Reflection & Next Improvements</h2>
+                <p>
+                    This project strengthened my understanding of asynchronous JavaScript,
+                    state management for multiple dynamic components, and structured
+                    UI rendering.
+                </p>
+                <p>
+                    Future improvements could include persistent state storage,
+                    enhanced UI feedback based on mood states, and extended gameplay mechanics.
+                </p>
+            </div>
+        </section>
+
+    </main>
+</body>
+
+</html>
