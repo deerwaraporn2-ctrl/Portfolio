@@ -40,41 +40,29 @@ p {
 h1, h2 {
   font-weight: 600;
 }
+/* =========================
+   BODY SECTION
+========================= */
+body {
+  font-family: "Inter", sans-serif;
+  background: linear-gradient(
+    120deg,
+    rgba(254, 172, 94, 0.65),
+    rgba(199, 121, 208, 0.75),
+    rgba(75, 192, 200, 0.75)
+  );
 
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+/* Backgound */
 .section-title {
   font-size: 2.3rem;
 }
-
-
-/* BODY */
-body {
-    font-family: "Inter", sans-serif;
-    /* background-color: #fdfcfb; /* soft warm white */
-    /* background: #fcfbf9; /* very soft neutral */ 
-    background: var(--bg-main);
-
-    color: #2e2e2e;
-    color: var(--text-dark);
-    line-height: 1.6;
+.section--soft {
+  background: none;
 }
-/* NAV */
-.case-navigation {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 3rem;
-}
-
-.case-nav a {
-  text-decoration: none;
-  font-weight: 500;
-  padding: 0.5rem 1rem;
-}
-
-.case-nav a:hover {
-  opacity: 0.6;
-}
-
 
 
 /* =========================
@@ -144,27 +132,19 @@ body {
 ========================= */
 
 .hero {
-  min-height: 75vh; /* hero takes 75% of screen height. */
+  min-height: 75vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 6rem 1.5rem; /* more breathing room top & bottom. */
-  background: radial-gradient(
-    circle at top,
-    rgba(108, 92, 231, 0.18),
-    transparent 60%
-  );
+  padding: 6rem 1.5rem;
 }
 
 /* Reusable card system */
 .card {
-  background: #ffffff;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(6px);
   padding: 4rem 3rem;
   border-radius: 28px;
-  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.05); /* soft shadow - subtle floating effect */
-  transition: transform 0.4s ease, box-shadow 0.4s ease; /* soft shadow - subtle floating effect */
-  max-width: 900px;
-  width: 100%;
 }
 
 .card:hover {
@@ -173,13 +153,11 @@ body {
 }
 
 /* Hero specific styling */
-.hero-card { /* soft gradient - depth, ligth border - clean definittion, no heavy line */
-  background: linear-gradient(
-    135deg,
-    #f6f3ff,
-    #ffffff
-  );
-  border: 1px solid rgba(157, 141, 241, 0.15);
+.hero-card {
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(120, 90, 200, 0.12);
+  
 }
 
 /* Content alignment */
@@ -257,18 +235,12 @@ body {
     transform: translateY(-3px);
 }
 
-.about-title {
-    color: #d6a58f;
-}
-.about-card {
-    border-left: 6px solid #f2d8c9; /* warm beige accent */
-}
+
 .skills-card {
     border-left: 6px solid #b7d3c2; /* sage accent */
 }
-.projects-card {
-    border-left: 6px solid #b8cde6; /* dusty blue */
-}
+
+
 .contact-card {
     border-left: 6px solid #f5c6d6; /* soft blush */
 }
@@ -530,59 +502,25 @@ body {
     grid-template-columns: 1fr 1fr;
   }
 }
-/* Layout + spacing  */
-.section { /* fade in */
-  padding: 6rem 1.5rem;
-  position: relative;
-}
-.section:not(:first-of-type) { /* Creates separation without heavy lines */
-  border-top: 1px solid rgba(0,0,0,0.04);
-}
- .section--soft {
-  position: relative;
-  overflow: hidden;
-}
 
-/* Background layer */
-.section--soft::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-
-  background: url("images/lavender.jpg");
-  background-size: cover;
-  background-position: center;
-
-  filter: blur(4px); /* blur ONLY background */
-  transform: scale(1.05); /* prevents edge cut */
-
-  z-index: 0;
-}
-
-/* Overlay (soft color) */
-.section--soft::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-
-  background: rgba(241, 237, 255, 0.80);
-
-  z-index: 1;
-}
-
-/* Content stays sharp */
-.section--soft > * {
-  position: relative;
-  z-index: 2;
-}
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 24px;
+  padding: 0 16px;
 }
 
 
-/* About page */
+/* =========================
+   ABOUT ME SECTION
+========================= */
+.about-title {
+    color: #d6a58f;
+}
+.about-card {
+    /* border-left: 6px solid #f2d8c9; /* warm beige accent */ 
+    max-width: 1100px;
+    margin: 0 auto;
+}
 .about-wrapper {
   display: grid;
   gap: 3rem;
@@ -888,8 +826,13 @@ body {
 /* ============================= */
 /* Standard sections and containers */
 /* ============================= */
-.section {
+/* Layout + spacing  */
+.section { /* fade in */
   padding: 6rem 1.5rem;
+  position: relative;
+}
+.section:not(:first-of-type) { /* Creates separation without heavy lines */
+  border-top: 1px solid rgba(0,0,0,0.04);
 }
 .container {
   max-width: 1100px;
