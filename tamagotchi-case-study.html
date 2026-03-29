@@ -5,14 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tamagotchi Game | Case Study</title>
-    <p class="case-meta">
+    <!-- <p class="case-meta">
         Role: Frontend Developer | Year: 2026
-    </p>
-    <link rel="stylesheet" href="style.css">
+    </p> -->
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/case-study.css">
     <script src="index.js" defer></script>
 </head>
 
 <body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">Waraporn</div>
+
+            <div class="nav-links">
+                <a href="index.html#projects">Projects</a>
+                <a href="index.html#about">About</a>
+                <a href="index.html#education">Education</a>
+                <a href="index.html#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
     <main class="case-study">
 
         <section class="section section--soft case-hero">
@@ -28,20 +41,23 @@
                         Users can create multiple pets with independent stat systems that
                         update in real time.
                     </p>
-                    <div class="case-actions">
-                        <a href="https://github.com/deerwaraporn2-ctrl/Tamagotchi-Game-New-Version.git" target="_blank" class="project-btn">
-                            Live Demo →
+                    <div class="project-actions">
+
+                        <a href="https://deerwaraporn2-ctrl.github.io/Tamagotchi-Game-New-Version/" target="_blank"
+                            class="project-btn">
+                            Live Demo
                         </a>
 
-                        <a href="https://github.com/deerwaraporn2-ctrl/Tamagotchi-Game-New-Version.git" target="_blank"
+                        <a href="https://github.com/deerwaraporn2-ctrl/Tamagotchi-Game-New-Version" target="_blank"
                             class="project-btn project-btn--secondary">
-                            View on GitHub →
+                            GitHub
                         </a>
+
                     </div>
                 </div>
 
                 <div class="case-hero-image">
-                    <img src="images/tamagotchi-preview.jpg" alt="Tamagotchi Game preview" width="200">
+                    <img src="images/tamagotchi-play-preview.jpg" alt="Tamagotchi Game preview" width="200">
                 </div>
 
             </div>
@@ -109,6 +125,36 @@
         </section>
 
     </main>
+    <footer class="footer">
+        <div class="container footer-inner">
+
+            <p class="footer-text">
+                © 2026 Waraporn Suwansukho. Built with HTML, CSS & JavaScript.
+            </p>
+
+            <div class="footer-links">
+
+                <a href="waraporn.suwansukho@yh.nackademin.se" class="footer-icon">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+
+                <a href="https://github.com/deerwaraporn2-ctrl" target="_blank" class="footer-icon">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+
+                <a href="https://linkedin.com/in/waraporn-s-a25968230" target="_blank" class="footer-icon">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+        <!-- Back to top -->
+        <a href="#top" class="back-top">Back to top ↑</a>
+
+    </footer>
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+    </div>
 </body>
 
 </html>
