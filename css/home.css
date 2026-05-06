@@ -294,6 +294,18 @@ grid-template-columns: 1fr;
 }
 }
 
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+  text-decoration: none;
+}
+
+.contact-item i {
+  font-size: 22px;
+}
+
 /* =========================
 REVEAL ANIMATION
 ========================= */

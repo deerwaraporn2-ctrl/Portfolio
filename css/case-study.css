@@ -142,3 +142,45 @@
 .project-btn:hover {
   transform: translateY(-2px);
 }
+
+/* Plot Twis */
+.plot-twist-gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+}
+
+.plot-twist-gallery img {
+  width: 240px;
+  height: 420px;
+  object-fit: cover;
+
+  border-radius: 16px;
+  cursor: pointer;
+
+  transition: transform 0.3s ease,
+              box-shadow 0.3s ease;
+}
+
+.plot-twist-gallery img:hover {
+  transform: translateY(-6px);
+}
+
+/* Tablet + mobile */
+
+@media (max-width: 768px) {
+
+  .plot-twist-gallery {
+    gap: 1rem;
+  }
+
+  .plot-twist-gallery img {
+    width: calc(50% - 0.5rem);
+    max-width: 180px;
+    height: 320px;
+  }
+}
+
