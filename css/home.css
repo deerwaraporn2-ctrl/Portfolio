@@ -320,3 +320,20 @@ transition: opacity 0.7s ease-out, transform 0.7s ease-out;
 opacity: 1;
 transform: translateY(0);
 }
+
+
+/* Align project buttons at the bottom of each card */
+.project-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.project-links {
+  margin-top: auto;
+}
