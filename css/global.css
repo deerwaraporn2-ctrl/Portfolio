@@ -78,12 +78,10 @@ body {
 }
 
 .section-title {
-  font-size: 2.3rem;
+  font-size: 2rem;
   margin-bottom: 2rem;
-
-  font-size: 2rem; /* restore size */
- /*  font-weight: 600; */
-  color: var(--text-dark);
+  color: #745c9d;
+  /* font-weight: 600; */
 }
 
 html {
